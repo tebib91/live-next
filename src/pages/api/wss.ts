@@ -1,7 +1,7 @@
 import { Server as HTTPServer } from 'http';
 import { NextApiRequest, NextApiResponse } from 'next';
 import { WebSocket, WebSocketServer } from 'ws';
-import { getCpuLoad, getRamUsage } from '../utils';
+import { getCpuLoad, getRamUsage } from '../../utils/utils';
 
 type NextApiResponseServer = NextApiResponse & {
   socket: {

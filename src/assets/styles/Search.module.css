@@ -8,11 +8,9 @@
   width: 50vw;
   justify-content: space-between;
   color: var(--light-font);
-  border-radius: 5px;
+  border-radius: 16px;
   margin: 0 0 30px;
-  background-color: var(--search-area-bg);
-  border-radius: 1rem;
-  border: none;
+  background-color: var(--background-app);
   padding: 0;
 }
 .searchWrapper {

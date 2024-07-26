@@ -1,10 +1,10 @@
 import {
-  getCpuLoad,
-  getDiskUsage,
-  getNetworkUsage,
-  getRamUsage,
-  getSystemInfo
-} from '../utils';
+    getCpuLoad,
+    getDiskUsage,
+    getNetworkUsage,
+    getRamUsage,
+    getSystemInfo
+} from '../../utils/utils';
 
 export default async function handler(req: any, res: any) {
   try {

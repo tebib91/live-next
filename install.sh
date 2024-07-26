@@ -1,24 +1,11 @@
 #!/bin/bash
 
 # Function to print a progress bar
-print_progress() {
-  local progress=$1
-  local width=50
-  local completed=$((progress * width / 100))
-  local remainder=$((width - completed))
-  local message=$2
-
-  printf "\r[%-${width}s] %d%% %s" "$(printf '%0.s#' $(seq 1 $completed))" "$progress" "$message"
-
-
-}
 
 # Function to log a message and update progress
 log_message() {
   local message=$1
-  local progress=$2
   printf "\n$(date +"%Y-%m-%d %H:%M:%S") - $message\n"
-  # print_progress $progress "\$(date +"%Y-%m-%d %H:%M:%S") - $message\n"
 }
 
 # Update and install Node.js and npm packages

@@ -1,0 +1,59 @@
+.
+├── README.md
+├── install.sh
+├── next-env.d.ts
+├── next.config.mjs
+├── package-lock.json
+├── package.json
+├── postcss.config.mjs
+├── project_structure.txt
+├── public
+│   ├── next.svg
+│   └── vercel.svg
+├── socket-server.ts
+├── src
+│   ├── app
+│   │   ├── components
+│   │   │   ├── CodeEditor.tsx
+│   │   │   ├── Dock.tsx
+│   │   │   ├── Modal.tsx
+│   │   │   ├── Search.tsx
+│   │   │   └── Widget.tsx
+│   │   ├── dashboard
+│   │   │   └── page.tsx
+│   │   ├── favicon.ico
+│   │   ├── globals.css
+│   │   ├── hooks
+│   │   │   ├── useDebounce.ts
+│   │   │   ├── useSearchResults.ts
+│   │   │   └── useSystemResults.ts
+│   │   ├── layout.tsx
+│   │   ├── login
+│   │   │   └── page.tsx
+│   │   └── page.tsx
+│   ├── assets
+│   │   ├── styles
+│   │   │   ├── Dock.module.css
+│   │   │   ├── Modal.module.css
+│   │   │   ├── Search.module.css
+│   │   │   └── Widget.module.css
+│   │   └── wallpapers
+│   │       ├── abstract-artwork-logo-linux-wallpaper-d374163633f1709651b1b381ada0e928.jpg
+│   │       ├── macos-mojave-night-wallpaper-33048d6dbcf8413fb105175654ac0812.jpg
+│   │       ├── nhSoftWallpaper02.jpg
+│   │       ├── ubuntu-4k.jpg
+│   │       ├── ubuntu-lucid-wallpaper-50e4967776637252c18bd3cf0d283e19.jpg
+│   │       └── wallpaperflare.com_wallpaper.jpg
+│   ├── pages
+│   │   └── api
+│   │       ├── search.ts
+│   │       ├── system.ts
+│   │       └── wss.ts
+│   └── utils
+│       ├── db.ts
+│       └── utils.ts
+├── tailwind.config.ts
+├── tsconfig.json
+└── uninstall.sh
+
+13 directories, 43 files

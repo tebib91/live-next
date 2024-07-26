@@ -20,7 +20,7 @@ const socketIO = require('socket.io')(http, {
 });
 
 //Add this before the app.get() block
-socketIO.on('connection', socket => {
+socketIO.on('connection', (socket: { id: any; on: (arg0: string, arg1: () => void) => void; }) => {
   console.log(`: ${socket.id} user just connected!`);
 
   socket.on('disconnect', () => {
@@ -28,7 +28,7 @@ socketIO.on('connection', socket => {
   });
 });
 
-app.post('/api', (req, res) => {
+app.post('/api', (req: { body: { name: any; message: any; }; }, res: { status: (arg0: number) => { (): any; new(): any; json: { (arg0: { name: any; message: any; }): void; new(): any; }; }; }) => {
   const { name, message } = req.body;
   socketIO.emit('notification', { name, message });
   console.log(name, message);

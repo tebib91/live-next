@@ -1,5 +1,6 @@
 'use client';
-import profilePic from '@/assets/wallpapers/nhSoftWallpaper02.jpg';
+import profilePic1 from '@/assets/wallpapers/wallpaperflare.com_wallpaper.jpg';
+
 import Image from 'next/image';
 import { useState } from 'react';
 import Dock from './components/Dock';
@@ -13,7 +14,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
       <Image
-        src={profilePic}
+        src={profilePic1}
         placeholder="blur"
         quality={100}
         fill

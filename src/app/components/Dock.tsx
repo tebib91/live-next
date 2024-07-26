@@ -30,6 +30,14 @@ const Dock = ({ setShowModal }: any) => {
           height={42}
         />
       </div>
+       <div className={styles.icon} onClick={() => setShowModal(true)}>
+        <Image
+          src={"https://img.icons8.com/?size=100&id=kxKxNOYahL31&format=png&color=000000"}
+          alt="Icon 3"
+          width={42}
+          height={42}
+        />
+      </div>
     </div>
   );
 };

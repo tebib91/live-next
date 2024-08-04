@@ -5,7 +5,7 @@
 # Function to log a message and update progress
 log_message() {
   local message=$1
-  printf "\n$(date +"%Y-%m-%d %H:%M:%S") - $message\n"
+  echo -e "\n$(date +"%Y-%m-%d %H:%M:%S") - $message"
 }
 
 # Update and install Node.js and npm packages
